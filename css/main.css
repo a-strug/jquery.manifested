@@ -1,0 +1,273 @@
+body {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
+    font-size: 16px;
+    line-height:24px;
+}
+
+h1, h2, h3 {
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align:left;
+    font-size:1.8em;
+}
+
+h2 {
+    margin-top:30px;
+    font-size:1.5em;
+}
+
+h3 {
+    margin-top:20px;
+    margin-bottom:10px;
+    font-size:1.1em;
+}
+
+p {
+    text-align:justify;
+}
+
+a {
+    color:#fff;
+    padding:0 5px;
+    background:#0c5aa6;
+    text-decoration:none;
+    color:#fff;
+}
+
+a:hover {
+    background:#408ad2;
+}
+
+#forkme {
+    position:absolute;
+    display:block;
+    top:-5px;
+    right:0px;
+    padding-right:100px;
+    height:48px;
+    line-height:60px;
+    background:#fff url(../img/forkme.png) no-repeat top right;
+    color:#a60000;
+    font-family:Helvetica, Arial;
+    font-weight:bold;
+    font-size:14px;
+}
+
+#forkme:hover {
+    color:#dc3b33;
+}
+
+#page {
+    position:relative;
+    margin:0 auto 50px auto;
+    width:800px;
+}
+
+
+#bounds {
+    height:200px;
+    width:600px;
+    position:relative;
+    -webkit-box-shadow:0 0 50px #777;
+    box-shadow:0 0 50px #777;
+    -moz-box-shadow:0 0 50px #777;
+}
+#scraggable_1 {
+    position:absolute;
+    top: 60px;
+    left: 240px;
+}
+
+#scraggable_2 {
+    position:absolute;
+    top: 40px;
+    right: 100px;
+}
+
+
+.code {
+    position:relative;
+    margin-bottom:15px;
+    padding:8px 0 8px 12px;
+    line-height:18px;
+    border:1px solid #ffe773;
+    border-left:4px solid #ffd300;
+    background:#ffffdd;
+}
+
+.code pre {
+    font-family:Monaco, Consolas, "Lucida Console", monospace;
+    font-size:12px;
+}
+
+.code .hint {
+    position:absolute;
+    top:0;
+    right:0;
+    padding:2px 5px;
+    background:#ffd300;
+    font-family:Monaco, Consolas, "Lucida Console", monospace;
+    font-size:12px;
+    color:#fff;
+}
+
+.left{
+    float:left;
+    margin-left:20px;
+    width:380px;
+}
+
+code {
+    padding:1px 5px;
+    border:1px solid #ffe773;
+    background:#ffffdd;
+    font-family:Monaco, Consolas, "Lucida Console", monospace;
+    font-size:12px;
+}
+
+.download {
+    margin-bottom:10px;
+}
+
+.download a {
+    margin-right:10px;
+}
+
+.desc{
+    margin:5px 0 20px 0;
+}
+
+.bold{
+    font-weight:bold
+}
+
+.note{
+    padding:1px 5px;
+    border:1px solid #ff7373;
+    background:#ffdddd;
+    font-style:italic;
+    margin:0 0 10px 0;
+}
+
+#toc {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100px;
+}
+#toc ol{
+    padding-left:10px
+}
+
+.box{
+    float:left;
+    margin:0 0 10px 0;
+}
+
+.center{
+    margin:0 25px;
+}
+
+.container{
+    border:1px solid #ffe773;
+    width:180px;
+    height:90px;
+    position:relative;
+    z-index:99;
+}
+
+.dashed{
+    border:1px dashed #ffe773;
+}
+
+.scraggable{
+    width:25px;
+    height:25px;
+    background-color:#B0C4DE;
+    position:absolute;
+    z-index:100;
+}
+
+.clearer{
+    clear:both;
+}
+
+.for_scraggable{
+    width: 180px;
+    padding: 2px 0;
+    text-align:center;
+    border: 1px solid #777;
+    margin:5px 0 0;
+    color: #666;
+}
+
+.red{
+    background-color:#ff7373;
+}
+
+.green{
+    background-color:#61dd5b;
+}
+
+#absolute_bounds{
+    position:absolute;
+    top:2500px;
+    left:600px;
+    width:298px;
+    height:198px;
+    border:1px solid #999;
+    z-index:10;
+    display:none;
+    -webkit-box-shadow:0 0 20px #777;
+    box-shadow:0 0 20px #777;
+    -moz-box-shadow:0 0 20px #777;
+}
+
+.pr20px{
+	padding: 0 0 0 20px;
+}
+
+.pb5px{
+	padding:0 0 5px 0
+}
+
+.support{
+		
+}
+
+.support div{
+	margin-right: 10px;
+	width: 64px;
+	height:64px;
+	float: left;	
+}
+
+.support .ie{
+	background: url(../img/ie.png);
+}
+
+.support .opera{
+	background: url(../img/opera.png);
+}
+
+.support .safari{
+	background: url(../img/safari.png);
+}
+
+.support .chrome{
+	background: url(../img/chrome.png);
+}
+
+.support .firefox{
+	background: url(../img/firefox.png);
+}
+
+a.num{
+    padding:1px 5px;
+    border:1px solid #7dff73;
+    background:#ddffdd;
+    font-family:Monaco, Consolas, "Lucida Console", monospace;
+    font-size:12px; 
+    color: #000;  
+}
+

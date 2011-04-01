@@ -1,0 +1,19 @@
+.manifested{
+    display: none;
+}
+
+#manifested_1{
+	height:400px;
+}
+
+#manifested_2{
+    height: 300px;
+    width: 800px;
+}
+
+.puzzle_bg{
+	height:400px;
+	width: 800px;
+	background: url(../img/bg.png) no-repeat;	
+}
+

@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+    <title>jQuery.Manifested</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/project.css" />
+</head>
+<body>
+<div id="toc">
+    <ol>
+        <li>
+            <a href="#downloads">Downloads</a>
+        </li>
+        <li>
+            <a href="#documentation">Documentation</a>
+        </li>
+        <li>
+            <a href="#examples">Examples</a>
+        </li>
+        <li>
+        	<a href="#support">Support</a>
+        </li>
+        <li>
+            <a href="#changelog">ChangeLog</a>
+        </li>
+        <li>
+            <a href="#credits">Credits</a>
+        </li>
+    </ol>
+</div>
+<div id="page">
+    <h1>jQuery.Manifested</h1>
+
+    <a href="https://github.com/a-strug/jquery.manifested" target="_blank" id="forkme" title="Fork me on Github">Fork me on GitHub</a>
+    
+    <p>
+        Coming soon...
+    </p>
+    <p style="padding:10px 0 20px 0">
+        To let your element(s) be manifested just:<br />
+        <code>$(expression).manifested([options]);</code>    
+    </p>
+    
+    <p class="pb5px"><a href="javascript:void(0)" id="test_1">click me!</a></p>   
+    <div class="puzzle_bg">
+		<div id="manifested_1" class="manifested">
+			<img src="img/puzzle.jpg"  />
+		</div>
+	</div>
+    
+    <h2>Code example</h2>
+
+<div class="code">
+<div class="hint">CSS</div>
+<pre>
+.bg{
+    height:400px;
+    width: 800px;
+    background: url(../img/bg.png) no-repeat;   
+}
+.manifested{
+    display: none;
+}
+#manifested_1{
+    height:400px;
+}
+</pre>
+</div>
+
+<div class="code">
+<div class="hint">HTML</div>
+<pre>
+&lt;p&gt;&lt;a href="javascript:void(0)" id="test_1"&gt;click me!&lt;/a&gt;&lt;/p&gt;   
+&lt;div class="bg"&gt;
+    &lt;div id="manifested_1" class="manifested"&gt;
+        &lt;img src="img/puzzle.jpg"  /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</pre>
+</div>
+
+<div class="code">
+<div class="hint">JS</div>
+<pre>
+$('#test_1').manifested({
+    manifested: $('#manifested_1'),
+    direction: 'TB',
+    speed: 3000,
+    color: '#000',
+}); 
+</pre>
+</div>
+
+    <h2 id="documentation">Documentation</h2>
+
+    <h3>Options</h3>
+    
+    <code class="bold">manifested</code>
+    <div class="desc">
+        A DOM element which will receive the <code>manifested</code> event. Possible values: <br />
+        <code>'selector', $('selector'), document.getElementById('elementId')</code><br />
+        Default: <code>false</code>
+        <p class="note">
+        	This option is required
+        </p> 
+    </div>     
+    
+    <code class="bold">direction</code>    
+    <div class="desc">
+        This options set the direction of manifestation. Possible values: 
+        <code>'TB', 'LR'</code>.
+        Default: <code>'TB'</code>
+        <p class="note">
+			<b>'TB'</b> - from Top to Bottom, 
+			<b>'LR'</b> - from Left to Right
+        </p>
+    </div>
+    
+    <code class="bold">speed</code>   
+    <div class="desc">
+        Is the <code>float</code> value of milliseconds determining how long the animation will run.
+        Default: <code>1000</code>
+    </div>
+
+    <code class="bold">timer</code>   
+    <div class="desc">
+        Is the <code>float</code> value of milliseconds that the animation will run.
+        Default: <code>0</code>
+    </div>
+    
+    <code class="bold">color</code>
+    <div class="desc">
+        Is the <code>string</code>, <code>HEX</code> or <code>RGB</code> value for the color, 
+        which will be filled a <code>manifested</code> region.<br /> Possible values: <code>'red', '#fff', 'rgb(0, 0, 0)'</code>.<br />
+        Default: <code>#000</code>
+    </div>
+
+    <code class="bold">height</code>
+    <div class="desc">
+        Is the <code>float</code> value of pixels for height or width (see note) for <code>manifested</code> region. 
+        Default: <code>100</code>
+        <p class="note">
+        	This option set the height for direction <code>'TB'</code> or width for <code>'LR'</code>
+        </p> 
+    </div>
+    
+    <h2 id="examples">Examples</h2>
+    
+    <code>1. direction: 'LR', color: '#fff', speed: 3000</code> <a href="javascript:void(0)" rel="exp_1" class="example">Show this example</a>
+    
+    <div id="exp_1" style="display: none">
+        <p class="pb5px"><a href="javascript:void(0)" id="test_2">click me!</a></p>
+        <div id="manifested_2">
+            <img src="img/lr.jpg" />
+        </div>
+    </div>
+    
+    <h2 id="support">Support</h2>
+    <div class="support">
+    	<div class="chrome"></div>
+    	<div class="firefox"></div>
+    	<div class="opera"></div>
+    	<div class="safari"></div>
+    	<div class="ie"></div>
+    </div>
+    <div class="clearer"></div>
+     
+    <h2 id="downloads">Downloads v.0.1.0</h2> 
+    <div class="download">
+        <a href="#">Compressed <i>(1.8 kb)</i></a>
+        <a href="#">Uncompressed <i>(4 kb)</i></a>
+        <i>(Right-click and use "Save as")</i>
+    </div>    
+    
+    <h2 id="changelog">Change log</h2>
+    <h3>0.1.0</h3>
+    <p>
+        Initial release of jquery.manifested
+    </p>
+
+    <h2 id="credits">Credits</h2>
+    <p>
+        <a href="https://developer.mozilla.org/en/JavaScript/Guide" title="Learn JavaScript JS" style="float:right;background:none;">
+            <img src='http://static.jsconf.us/promotejsh.gif' height='150' width='180' alt='JavaScript Array constructor'/>
+        </a>
+        Andrej Struzhkov<br/>
+        <a href="mailto:a.strug.ua@gmail.com">a.strug.ua@gmail.com</a><br/>
+        <a href="https://github.com/a-strug/" target="_blank">https://github.com/a-strug/</a><br/>
+    </p>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://github.com/a-strug/jquery.manifested/raw/master/jquery.manifested.js"></script>
+	
+    <script type="text/javascript">
+        $(function() {
+
+            $('.example').click(function() {
+                var el = $(this);
+                var id = el.attr('rel');
+                $('div#' + id).toggle('slow', function() {
+                    if ($(this).is(':visible')) {
+                        el.text('Hide this example');
+                    } else {
+                    	el.text('Show this example'); 
+                    }
+                });
+            });
+                  	
+    		$('#test_1').manifested({
+    			manifested: $('#manifested_1'),
+    			direction: 'TB',
+    			speed: 1000,
+    			color: 'red',
+    		});
+
+            $('#test_2').manifested({
+                manifested: $('#manifested_2'),
+                direction: 'LR',
+                speed: 3000,
+                color: '#fff',
+            });
+    		
+        })
+    </script>
+</div>
+</body>
+</html>
+
